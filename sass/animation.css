@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#preloder {
+  background-color: #0e111f;
+  background-image: url("../imgs/preloader1.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  #preloder {
+    background-size: 90%;
+  }
+}
+
+.landing {
+  background-image: url("../imgs/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing .layout {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#027986), to(#000729));
+  background-image: linear-gradient(#027986, #000729);
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .landing .layout {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00545d), to(#000729));
+    background-image: linear-gradient(#00545d, #000729);
+  }
+}
+
+.landing .layout .menu {
+  display: block;
+  width: 35px;
+  margin: 30px auto 0;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .landing .layout .menu {
+    margin: 15px;
+    width: 28px;
+  }
+}
+
+.landing .layout .social-links {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .landing .layout .social-links {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.landing .layout .social-links img {
+  width: 35px;
+  display: inline-block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.landing .layout .social-links img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .landing .layout .social-links img {
+    width: 30px;
+  }
+}
+
+.landing .layout .useful-links {
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .landing .layout .useful-links {
+    position: static;
+    margin: 15px 15px 15px auto;
+  }
+}
+
+.landing .layout .useful-links img {
+  width: 35px;
+  display: inline-block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.landing .layout .useful-links img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .landing .layout .useful-links img {
+    width: 30px;
+  }
+}
+
+.landing nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.landing .img-logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+.landing button {
+  background-color: transparent;
+  border: none;
+  border: 1.7px solid #fff;
+  outline: none;
+  padding: 4px 19px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 20px;
+  z-index: 10;
+  letter-spacing: 1.3px;
+}
+
+@media (max-width: 551px) {
+  .landing button {
+    font-size: 17px;
+    padding: 3px 18px;
+  }
+}
+
+.landing .text-box {
+  margin-top: 180px;
+}
+
+@media (max-width: 767px) {
+  .landing .text-box {
+    margin-top: 130px;
+  }
+}
+
+.landing .text-box small {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+.landing .text-box h2 {
+  font-size: 90px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .landing .text-box h2 {
+    font-size: 50px;
+  }
+}
+
+.landing .bubbles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -90px;
+}
+
+.landing .bubbles img {
+  width: 50px;
+  -webkit-animation: bubble-move 6s linear infinite;
+          animation: bubble-move 6s linear infinite;
+}
+
+.landing .bubbles img:first-of-type {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 70px;
+}
+
+.landing .bubbles img:nth-of-type(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  width: 34px;
+}
+
+.landing .bubbles img:nth-of-type(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  width: 55px;
+}
+
+.landing .bubbles img:nth-of-type(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  width: 85px;
+}
+
+.landing .bubbles img:nth-of-type(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  width: 45px;
+}
+
+.landing .bubbles img:nth-of-type(6) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  width: 60px;
+}
+
+.landing .bubbles img:last-of-type {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  width: 40px;
+}
+
+@-webkit-keyframes bubble-move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-85vh);
+            transform: translateY(-85vh);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble-move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-85vh);
+            transform: translateY(-85vh);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
